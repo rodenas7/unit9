@@ -17,12 +17,11 @@ public class CadenasAlumno {
          System.out.print("Introduce una cadena de texto: \n");
          String cadena = sc.nextLine();
          System.out.print("Introduce una segunda cadena de texto: \n");
-         String cadena2 = sc.nextLine();
-         if(comparaIgnorandoMayusculas(cadena,cadena2)){
-             System.out.print("Las dos cadenas son iguales \n");
-         }else{
-              System.out.print("Las cadenas escritas no son iguales \n");
-         }
+         String regla = sc.nextLine();
+         System.out.print("Introduce una segunda cadena de texto: \n");
+         String cambio = sc.nextLine();
+         System.out.print(cadena.replaceFirst(regla, cambio));
+         System.out.print(reemplazaPrimero(cadena,regla,cambio));
                
      }
       public static boolean sonIguales(String cadena1, String cadena2){
